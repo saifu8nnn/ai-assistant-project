@@ -118,7 +118,7 @@ Boom! 💥 The app should pop up on your screen. Create an account, log in, and 
 ## 📂 Project Structure
 
 A quick map of the codebase so you don't get lost:
-
+```
 ├── backend
 |  ├── alembic
 |  |  ├── env.py
@@ -145,6 +145,7 @@ A quick map of the codebase so you don't get lost:
 |  ├── package.json
 |  └── renderer.js
 └── README.md
+```
 ---
 
 ## 🔮 What's Next? (Future Roadmap)
