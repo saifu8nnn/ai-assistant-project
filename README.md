@@ -1,4 +1,4 @@
-# 🚀 Desktop AI Assistant 
+# 🚀 Habibi AI Assistant 
 
 Welcome to the **Desktop AI Assistant**! 
 
