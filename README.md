@@ -119,27 +119,32 @@ Boom! 💥 The app should pop up on your screen. Create an account, log in, and 
 
 A quick map of the codebase so you don't get lost:
 
-```text
-ai_assistant/
-│
-├── backend/                  # Python FastAPI Backend
-│   ├── app/
-│   │   ├── main.py           # API routes & WebSocket logic
-│   │   ├── models.py         # SQLAlchemy database models (Users, Messages)
-│   │   ├── schemas.py        # Pydantic validation schemas
-│   │   ├── auth.py           # Password hashing & JWT logic
-│   │   ├── database.py       # DB connection setup
-│   │   ├── socket_manager.py # Manages active WebSocket connections
-│   │   └── llm.py            # Connects to Groq API to stream AI text
-│   └── .env                  # Keep your secrets safe here!
-│
-├── package.json              # Node.js dependencies (Electron)
-├── main.js                   # Electron main process (Creates the window)
-├── index.html                # The UI structure and CSS magic
-└── renderer.js               # Frontend logic (Fetches history, handles DOM)
-
-```
-
+├── backend
+|  ├── alembic
+|  |  ├── env.py
+|  |  ├── README
+|  |  ├── script.py.mako
+|  |  └── versions
+|  |  |  └── 6544f581e127_create_initial_tables.py
+|  ├── alembic.ini
+|  ├── app
+|  |  ├── auth.py
+|  |  ├── database.py
+|  |  ├── llm.py
+|  |  ├── main.py
+|  |  ├── models.py
+|  |  ├── schemas.py
+|  |  └── socket_manager.py
+|  ├── Dockerfile
+|  └── requirements.txt
+├── docker-compose.yml
+├── frontend
+|  ├── index.html
+|  ├── main.js
+|  ├── package-lock.json
+|  ├── package.json
+|  └── renderer.js
+└── README.md
 ---
 
 ## 🔮 What's Next? (Future Roadmap)
