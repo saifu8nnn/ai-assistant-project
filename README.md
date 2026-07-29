@@ -15,6 +15,7 @@ Whether you're here to use it, learn from the code, or contribute, I'm glad you 
 *   **🗄️ Persistent History:** Close the app, come back tomorrow, and your chats will be right there in the sidebar, thanks to our relational database setup.
 *   **🎨 Clean, Native UI:** A beautiful dark-mode interface inspired by the best AI tools out there, powered by Electron for a native desktop feel.
 *   **🧠 Groq-Powered AI:** Uses the incredibly fast Groq API (or any LLM provider you swap in) for instant, intelligent responses.
+*   **Multi-Chat Sessions:** Grouping messages into distinct, separate conversations (like tabs).
 
 ---
 
@@ -145,7 +146,6 @@ ai_assistant/
 
 This app is totally usable right now, but there's always room to grow. Future updates might include:
 
-* [ ] **Multi-Chat Sessions:** Grouping messages into distinct, separate conversations (like tabs).
 * [ ] **Export Chat:** A button to download your chat history as a PDF or Markdown file.
 * [ ] **Custom Settings:** Letting users change AI models or adjust temperature directly from the UI.
 
