@@ -1,4 +1,6 @@
 from pydantic import BaseModel
+from datetime import datetime
+from typing import Optional
 
 # This is what the frontend MUST send us
 class UserCreate(BaseModel):
@@ -17,3 +19,20 @@ class UserResponse(BaseModel):
 class Token(BaseModel):
     access_token: str
     token_type: str
+    
+class ConversationResponse(BaseModel):
+    id: int
+    title: str
+    created_at: Optional[datetime] = None
+
+    class Config:
+        from_attributes = True
+
+class MessageResponse(BaseModel):
+    id: int
+    role: str
+    content: str
+    created_at: Optional[datetime] = None
+
+    class Config:
+        from_attributes = True
