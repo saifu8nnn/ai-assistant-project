@@ -1,6 +1,6 @@
 # 🚀 Habibi AI Assistant 
 
-Welcome to the **Desktop AI Assistant**! 
+Welcome to the **Habibi AI Assistant**! 
 
 Ever wanted to build your own ChatGPT or Gemini clone from scratch? That's exactly what this project is. It's a fully functional, lightning-fast desktop application built with **Electron.js** on the frontend and **FastAPI** on the backend. It streams AI responses in real-time, remembers your chat history, and wraps it all in a sleek, modern dark-mode UI.
 
