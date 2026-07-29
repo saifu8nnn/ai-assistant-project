@@ -15,7 +15,7 @@ const API_BASE = "http://127.0.0.1:8000";
 let ws;
 let currentAiMessageDiv = null;
 let sidebarCollapsed = false;
-let currentConversationId = null; // <-- tracks which chat is open
+let currentConversationId = null; 
 
 console.log("✅ DOM Elements loaded successfully");
 
@@ -65,7 +65,7 @@ async function authenticate(action) {
                 sidebar.classList.remove('collapsed');
                 collapseBtn.innerText = '✕';
 
-                // Load conversation list, then open the most recent one (or start fresh)
+                
                 await initConversations(username);
             }
         } else {
@@ -134,7 +134,7 @@ async function sendMessage() {
     const text = messageInput.value.trim();
     if (!text || !ws || ws.readyState !== WebSocket.OPEN) return;
 
-    // If there's no active conversation yet, create one first
+    
     if (!currentConversationId) {
         currentConversationId = await createConversation(displayUser.innerText);
         await loadSidebarHistory(displayUser.innerText); // refresh sidebar to show the new chat

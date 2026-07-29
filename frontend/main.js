@@ -12,11 +12,11 @@ function createWindow () {
     }
   });
 
-  // Yeh load karega humari frontend UI file ko
+  
   win.loadFile('index.html');
-  // Window load hone ke turant baad Console automatically khul jayega
+  
 win.webContents.openDevTools();
-  // Menu bar hide karne ke liye (clean look ke liye)
+  
   win.setMenuBarVisibility(false);
 }
 

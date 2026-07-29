@@ -28,7 +28,7 @@ class GroqProvider(LLMProvider):
 
     async def generate_response(self, prompt: str) -> AsyncGenerator[str, None]:
         try:
-            # We pass stream=True to tell Groq to send data word-by-word
+            # We pass stream=True to tell Groq to send data word-by-word for the streaming message effect on frontend
             stream = await self.client.chat.completions.create(
                 messages=[
                     {
